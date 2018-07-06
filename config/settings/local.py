@@ -6,7 +6,7 @@ from .base import env
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
 DEBUG = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
-SECRET_KEY = env('DJANGO_SECRET_KEY', default='sXiZ5uCLAPOdo1wpnpYLa8AqUxvk1z5ItYqdOYZsAlO2jzWKQTThlFMeVgoXlzxA')
+SECRET_KEY = env('DJANGO_SECRET_KEY', default='Q6GwLp80tOP0jPQ4c3lfJ57cEw3eV5NRbTmhcEmLrhfmQ61lMb6pUjaZ8kPCBl1Y')
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = [
     "localhost",
@@ -59,6 +59,11 @@ INTERNAL_IPS = ['127.0.0.1', '10.0.2.2']
 # ------------------------------------------------------------------------------
 # https://django-extensions.readthedocs.io/en/latest/installation_instructions.html#configuration
 INSTALLED_APPS += ['django_extensions']  # noqa F405
-
+# Celery
+# ------------------------------------------------------------------------------
+# http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-always-eager
+CELERY_TASK_ALWAYS_EAGER = True
+# http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-eager-propagates
+CELERY_TASK_EAGER_PROPAGATES = True
 # Your stuff...
 # ------------------------------------------------------------------------------

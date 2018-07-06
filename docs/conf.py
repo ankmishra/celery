@@ -1,4 +1,4 @@
-# plateiq documentation build configuration file, created by
+# My Awesome Project documentation build configuration file, created by
 # sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -39,8 +39,8 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "plateiq"
-copyright = """2018, Daniel Roy Greenfeld"""
+project = "My Awesome Project"
+copyright = """2018, Ankit Mishra"""
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -183,8 +183,8 @@ latex_documents = [
     (
         "index",
         "plateiq.tex",
-        "plateiq Documentation",
-        """Daniel Roy Greenfeld""",
+        "My Awesome Project Documentation",
+        """Ankit Mishra""",
         "manual",
     )
 ]
@@ -218,8 +218,8 @@ man_pages = [
     (
         "index",
         "plateiq",
-        "plateiq Documentation",
-        ["""Daniel Roy Greenfeld"""],
+        "My Awesome Project Documentation",
+        ["""Ankit Mishra"""],
         1,
     )
 ]
@@ -237,10 +237,10 @@ texinfo_documents = [
     (
         "index",
         "plateiq",
-        "plateiq Documentation",
-        """Daniel Roy Greenfeld""",
-        "plateiq",
-        """Behold My Awesome Project!""",
+        "My Awesome Project Documentation",
+        """Ankit Mishra""",
+        "My Awesome Project",
+        """checking about cookiee cuter""",
         "Miscellaneous",
     )
 ]

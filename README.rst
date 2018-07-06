@@ -1,7 +1,7 @@
-plateiq
-=======
+My Awesome Project
+==================
 
-Behold My Awesome Project!
+checking about cookiee cuter
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
@@ -57,12 +57,45 @@ Moved to `Live reloading and SASS compilation`_.
 
 
 
+Celery
+^^^^^^
+
+This app comes with Celery.
+
+To run a celery worker:
+
+.. code-block:: bash
+
+    cd plateiq
+    celery -A plateiq.taskapp worker -l info
+
+Please note: For Celery's import magic to work, it is important *where* the celery commands are run. If you are in the same folder with *manage.py*, you should be right.
+
+
+
+
+
+Sentry
+^^^^^^
+
+Sentry is an error logging aggregator service. You can sign up for a free account at  https://sentry.io/signup/?code=cookiecutter  or download and host it yourself.
+The system is setup with reasonable defaults, including 404 logging and integration with the WSGI application.
+
+You must set the DSN url in production.
 
 
 Deployment
 ----------
 
 The following details how to deploy this application.
+
+
+Heroku
+^^^^^^
+
+See detailed `cookiecutter-django Heroku documentation`_.
+
+.. _`cookiecutter-django Heroku documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html
 
 
 
